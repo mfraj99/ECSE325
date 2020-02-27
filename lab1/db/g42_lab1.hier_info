@@ -1,0 +1,36 @@
+|g42_lab1
+clk => countlimit[0].CLK
+clk => countlimit[1].CLK
+clk => countlimit[2].CLK
+clk => countlimit[3].CLK
+clk => countlimit[4].CLK
+clk => countlimit[5].CLK
+clk => countlimit[6].CLK
+clk => countlimit[7].CLK
+countbytwo => process_0.IN1
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+rst => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+enable => countlimit.OUTPUTSELECT
+output[0] << countlimit[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] << countlimit[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] << countlimit[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] << countlimit[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] << countlimit[4].DB_MAX_OUTPUT_PORT_TYPE
+output[5] << countlimit[5].DB_MAX_OUTPUT_PORT_TYPE
+output[6] << countlimit[6].DB_MAX_OUTPUT_PORT_TYPE
+output[7] << countlimit[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

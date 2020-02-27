@@ -1,0 +1,14 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL; 
+USE IEEE.NUMERIC_STD.ALL; 
+entity g42_lab1 is 
+	Port(clk: in std_logic; 
+		  countbytwo: in std_logic; 
+		  rst: in std_logic; 
+		  enable: in std_logic; 
+		  output: in std_logic_vector(7 downto 0)); 
+end g42_lab1; 
+
+
+architecture behavioral of g42_lab1 is
+	signal countlimit: integer rage 0 to 255;
