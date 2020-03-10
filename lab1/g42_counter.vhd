@@ -1,3 +1,5 @@
+--Code written by Michael Frajman and Shi Tong Li - Group 42
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL; 
 USE IEEE.NUMERIC_STD.ALL; 
