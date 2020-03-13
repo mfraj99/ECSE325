@@ -26,7 +26,34 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.precisionTest">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ecse325lab2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="precision" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ecse325lab2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,31 +76,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="precisionTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ecse325lab2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/precisionTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.precision" />
+      <item itemvalue="Python.main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.precisionTest" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.precision" />
       </list>
     </recent_temporary>
@@ -91,7 +100,9 @@
       <workItem from="1583533359268" duration="1468000" />
       <workItem from="1583891014033" duration="50000" />
       <workItem from="1583891081809" duration="5567000" />
-      <workItem from="1583937494204" duration="1727000" />
+      <workItem from="1583937494204" duration="1927000" />
+      <workItem from="1584040408056" duration="1954000" />
+      <workItem from="1584042744321" duration="16173000" />
     </task>
     <servers />
   </component>
@@ -99,83 +110,65 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584042798779">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="184" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1584042798779" />
     <state x="448" y="231" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583533399725">
       <screen x="0" y="23" width="1440" height="815" />
     </state>
     <state x="448" y="231" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.815@0.23.1440.815" timestamp="1583533399725" />
-    <state width="1358" height="244" key="GridCell.Tab.0.bottom" timestamp="1583938945749">
+    <state width="1358" height="197" key="GridCell.Tab.0.bottom" timestamp="1584060923595">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1583938945749" />
-    <state width="1358" height="197" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1583536148063" />
+    <state width="1358" height="197" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1584060923595" />
+    <state width="1358" height="197" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1584056915125" />
     <state width="1358" height="197" key="GridCell.Tab.0.bottom/0.23.1440.817@0.23.1440.817" timestamp="1583538185522" />
-    <state width="1358" height="244" key="GridCell.Tab.0.center" timestamp="1583938945748">
+    <state width="1358" height="197" key="GridCell.Tab.0.center" timestamp="1584060923595">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1583938945748" />
-    <state width="1358" height="197" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1583536148062" />
+    <state width="1358" height="197" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1584060923595" />
+    <state width="1358" height="197" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1584056915124" />
     <state width="1358" height="197" key="GridCell.Tab.0.center/0.23.1440.817@0.23.1440.817" timestamp="1583538185521" />
-    <state width="1358" height="244" key="GridCell.Tab.0.left" timestamp="1583938945747">
+    <state width="1358" height="197" key="GridCell.Tab.0.left" timestamp="1584060923594">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1583938945747" />
-    <state width="1358" height="197" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1583536148062" />
+    <state width="1358" height="197" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1584060923594" />
+    <state width="1358" height="197" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1584056915124" />
     <state width="1358" height="197" key="GridCell.Tab.0.left/0.23.1440.817@0.23.1440.817" timestamp="1583538185521" />
-    <state width="1358" height="244" key="GridCell.Tab.0.right" timestamp="1583938945748">
+    <state width="1358" height="197" key="GridCell.Tab.0.right" timestamp="1584060923595">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1583938945748" />
-    <state width="1358" height="197" key="GridCell.Tab.0.right/0.23.1440.815@0.23.1440.815" timestamp="1583536148063" />
+    <state width="1358" height="197" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1584060923595" />
+    <state width="1358" height="197" key="GridCell.Tab.0.right/0.23.1440.815@0.23.1440.815" timestamp="1584056915124" />
     <state width="1358" height="197" key="GridCell.Tab.0.right/0.23.1440.817@0.23.1440.817" timestamp="1583538185521" />
-    <state width="1358" height="244" key="GridCell.Tab.1.bottom" timestamp="1583938945750">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1358" height="244" key="GridCell.Tab.1.bottom" timestamp="1584053646500">
+      <screen x="0" y="23" width="1440" height="815" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1583938945750" />
-    <state width="1358" height="244" key="GridCell.Tab.1.center" timestamp="1583938945749">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1358" height="244" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1584046893474" />
+    <state width="1358" height="244" key="GridCell.Tab.1.bottom/0.23.1440.815@0.23.1440.815" timestamp="1584053646500" />
+    <state width="1358" height="244" key="GridCell.Tab.1.center" timestamp="1584053646499">
+      <screen x="0" y="23" width="1440" height="815" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1583938945749" />
-    <state width="1358" height="244" key="GridCell.Tab.1.left" timestamp="1583938945749">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1358" height="244" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1584046893474" />
+    <state width="1358" height="244" key="GridCell.Tab.1.center/0.23.1440.815@0.23.1440.815" timestamp="1584053646499" />
+    <state width="1358" height="244" key="GridCell.Tab.1.left" timestamp="1584053646498">
+      <screen x="0" y="23" width="1440" height="815" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1583938945749" />
-    <state width="1358" height="244" key="GridCell.Tab.1.right" timestamp="1583938945750">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1358" height="244" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1584046893473" />
+    <state width="1358" height="244" key="GridCell.Tab.1.left/0.23.1440.815@0.23.1440.815" timestamp="1584053646498" />
+    <state width="1358" height="244" key="GridCell.Tab.1.right" timestamp="1584053646499">
+      <screen x="0" y="23" width="1440" height="815" />
     </state>
-    <state width="1358" height="244" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1583938945750" />
+    <state width="1358" height="244" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1584046893474" />
+    <state width="1358" height="244" key="GridCell.Tab.1.right/0.23.1440.815@0.23.1440.815" timestamp="1584053646499" />
     <state x="229" y="60" key="SettingsEditor" timestamp="1583891046289">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="229" y="60" key="SettingsEditor/0.23.1440.813@0.23.1440.813" timestamp="1583891046289" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/precisionTest.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/precision.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/precision.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/precision.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ecse325lab2$precisionTest.coverage" NAME="precisionTest Coverage Results" MODIFIED="1583938945728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ecse325lab2$precisionTest.coverage" NAME="main Coverage Results" MODIFIED="1584060923585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ecse325lab2$precision.coverage" NAME="precision Coverage Results" MODIFIED="1583535856960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
