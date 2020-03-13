@@ -93,7 +93,7 @@ R20
 R12
 R13
 Eg42_lab2
-Z21 w1584059313
+Z21 w1584117316
 R1
 R2
 R3
@@ -106,9 +106,9 @@ Ve1YMG^VCNDjNB=A30^:<33
 !s100 BizZ889?j@^5R<mRaCSR?3
 R7
 32
-Z24 !s110 1584062617
+Z24 !s110 1584118541
 !i10b 1
-Z25 !s108 1584062617.000000
+Z25 !s108 1584118541.000000
 Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab2/g42_lab2.vhd|
 Z27 !s107 C:/Users/sli196/ECSE325/lab2/g42_lab2.vhd|
 !i113 1
@@ -121,8 +121,8 @@ R3
 DEx4 work 8 g42_lab2 0 22 e1YMG^VCNDjNB=A30^:<33
 l18
 L15
-VSAH6XPelaSMN0i`>@EjQ<2
-!s100 90>^hnDl@gc13BM6jN=:m3
+VlcJ3B99Ca]9imbCSN>J8g1
+!s100 1A91zI>KZQWjEn>W>ULf91
 R7
 32
 R24
@@ -134,21 +134,43 @@ R27
 R28
 R13
 Eg42_mac
-Z29 w1584059593
+Z29 w1584125832
+R1
+R2
+R3
 R4
-Z30 8C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd
-Z31 FC:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd
+R22
+R23
 l0
-L1
-Vn^R=:9izRF>G9T@X;9d_12
-!s100 M;b_3ill`C[E;7D4FL7E43
+L5
+VkBJF7FS6<1V=MOM:F3Z4W0
+!s100 HMCBL<64Ob[B[>GdJ=BS[1
 R7
 32
-Z32 !s110 1584059596
+Z30 !s110 1584125834
 !i10b 1
-Z33 !s108 1584059596.000000
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd|
-Z35 !s107 C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd|
+Z31 !s108 1584125834.000000
+R26
+R27
+!i113 1
+R28
+R13
+Abehavioral
+R1
+R2
+R3
+Z32 DEx4 work 7 g42_mac 0 22 kBJF7FS6<1V=MOM:F3Z4W0
+l19
+L15
+VS2dA?A<4^gDaW@KizE`Zb2
+!s100 hjiFg<ac9iWGAYYcG^Pi11
+R7
+32
+R30
+!i10b 1
+R31
+R26
+R27
 !i113 1
 R28
 R13
@@ -160,34 +182,37 @@ VP3heKkDPQ?gY<8JMcbgl10
 !s100 C<FI61l85<6^blJ7lCa@J0
 R7
 32
-R32
+!s110 1584059596
 !i10b 1
-R33
-R34
-R35
+!s108 1584059596.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd|
+!s107 C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd|
 !i113 1
 R28
 R13
+FC:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd
+w1584059593
+8C:/Users/sli196/ECSE325/lab2/g42 MAC tb.vhd
 Eg42_mac_tb
-Z36 w1584062612
+Z33 w1584125036
 R14
 R1
 R2
 R3
 R4
-Z37 8C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd
-Z38 FC:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd
+Z34 8C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd
+Z35 FC:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd
 l0
 L7
 VRSMb]eO3jNQkM_87YzaSb1
 !s100 R;^d:W0ii0ZWl6mOSI7[50
 R7
 32
-R24
+Z36 !s110 1584125143
 !i10b 1
-R25
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd|
-Z40 !s107 C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd|
+Z37 !s108 1584125143.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd|
+Z39 !s107 C:/Users/sli196/ECSE325/lab2/g42_MAC_tb.vhd|
 !i113 1
 R28
 R13
@@ -199,15 +224,15 @@ R3
 DEx4 work 10 g42_mac_tb 0 22 RSMb]eO3jNQkM_87YzaSb1
 l40
 L10
-V_[G?2jU_W<_ecQXIJ7T]G3
-!s100 0iSh?1B[DK1EmlgF4L^jn1
+VYB9WW0RgY>ndgcG<XGoMa2
+!s100 bC3GRmVhaE^6>P6=zNB3`0
 R7
 32
-R24
+R36
 !i10b 1
-R25
+R37
+R38
 R39
-R40
 !i113 1
 R28
 R13

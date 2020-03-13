@@ -29,13 +29,13 @@ architecture test of g42_MAC_tb is
 
   constant clk_PERIOD : time := 100 ns;
 
-  signal x_in     : std_logic_vector(9 downto 0); 
-  signal y_in     : std_logic_vector(9 downto 0); 
-  signal N_in     : std_logic_vector(9 downto 0); 
-  signal clk_in   : std_logic; 
-  signal rst_in   : std_logic; 
+  signal x_in     :  std_logic_vector(9 downto 0); 
+  signal y_in     :  std_logic_vector(9 downto 0); 
+  signal N_in     :  std_logic_vector(9 downto 0); 
+  signal clk_in   :  std_logic; 
+  signal rst_in   :  std_logic; 
   signal mac_out   : std_logic_vector(19 downto 0); 
-  signal ready_in : std_logic;
+  signal ready_in :  std_logic;
 
 begin
 
@@ -75,10 +75,11 @@ begin
       wait until rising_edge(clk_in);
       rst_in <= '0';
 
-       	file_open(file_VECTORS_X, "C:\Users\sli196\ECSE325\scripts\lab2\ecse325lab2\lab2-x-binary.txt", read_mode);
+      file_open(file_VECTORS_X, "C:\Users\sli196\ECSE325\scripts\lab2\ecse325lab2\lab2-x-binary.txt", read_mode);
  	file_open(file_VECTORS_Y, "C:\Users\sli196\ECSE325\scripts\lab2\ecse325lab2\lab2-y-binary.txt", read_mode);
-	file_open(file_RESULTS, "C:\Users\sli196\ECSE325\scripts\lab2\ecse325lab2\lab2-x-binary.txt\lab2-out.txt", write_mode);    
-	 while not endfile (file_VECTORS_X) loop
+	file_open(file_RESULTS, "C:\Users\sli196\ECSE325\scripts\lab2\ecse325lab2\lab2-out.txt", write_mode);    
+
+      while not endfile (file_VECTORS_X) loop
          readline(file_VECTORS_X, v_lline1);
          read(v_lline1, v_x_in);
          readline(file_VECTORS_Y, v_lline2);
@@ -89,6 +90,13 @@ begin
     
          wait until rising_edge(clk_in);
       end loop;
+
+	if ready_in = '1' then
+	write(v_Oline, mac_out);
+	writeline(file_RESULTS, v_Oline);
+	wait;
+	end if;
+
 
       wait;
   end process;
