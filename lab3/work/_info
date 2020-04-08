@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/16.1
+Eg42_fir
+w1586302043
+Z0 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/sli196/ECSE325/lab3
+8C:/Users/sli196/ECSE325/lab3/g42_FIR.vhd
+FC:/Users/sli196/ECSE325/lab3/g42_FIR.vhd
+l0
+L6
+V;kgDEld7hH=Fmo<=f0Eg?2
+!s100 =1S@SO2]7B<]g5L>79@Cg0
+Z4 OV;C;10.5b;63
+32
+!s110 1586302049
+!i10b 1
+!s108 1586302049.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab3/g42_FIR.vhd|
+!s107 C:/Users/sli196/ECSE325/lab3/g42_FIR.vhd|
+!i113 1
+Z5 o-work work -2002 -explicit
+Z6 tExplicit 1 CvgOpt 0
+Eg42_fir_tb
+Z7 w1586303283
+Z8 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R0
+R1
+R2
+R3
+Z9 8C:/Users/sli196/ECSE325/lab3/g42_lab3_tb.vhd
+Z10 FC:/Users/sli196/ECSE325/lab3/g42_lab3_tb.vhd
+l0
+L7
+V78AN1KP>EWRG3CHUD_KDh3
+!s100 e[2E;nFDL3hC^D<;RCcIb1
+R4
+32
+Z11 !s110 1586303285
+!i10b 1
+Z12 !s108 1586303285.000000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/sli196/ECSE325/lab3/g42_lab3_tb.vhd|
+Z14 !s107 C:/Users/sli196/ECSE325/lab3/g42_lab3_tb.vhd|
+!i113 1
+R5
+R6
+Atestbench
+R8
+R0
+R1
+R2
+DEx4 work 10 g42_fir_tb 0 22 78AN1KP>EWRG3CHUD_KDh3
+l33
+L10
+V4eE`d=JlX>mC]<QAmKilF2
+!s100 F:ET5g_B:a]:ge[ZBl>BS0
+R4
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R5
+R6
