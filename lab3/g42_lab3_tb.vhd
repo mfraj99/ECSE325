@@ -62,8 +62,8 @@ begin
 		wait until rising_edge(clk_in);
 		rst_in <= '0';
 
-		file_open(file_IN, "C:\", read_mode);
-		file_open(file_RESULTS, "C:\", write_mode);
+		file_open(file_IN, "C:\Users\sli196.CAMPUS\ECSE325\scripts\lab3\lab3-In-fixedOutput.txt", read_mode);
+		file_open(file_RESULTS, "C:\Users\sli196.CAMPUS\ECSE325\scripts\lab3\lab3-out.txt", write_mode);
 		
 		while not endfile (file_IN) loop
 			readline(file_IN, v_lline1);	

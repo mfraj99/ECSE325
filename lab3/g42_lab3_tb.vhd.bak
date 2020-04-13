@@ -62,8 +62,8 @@ begin
 		wait until rising_edge(clk_in);
 		rst_in <= '0';
 
-		file_open(file_IN, "C:\ecse 325 LABS\src\Lab3\lab3-in-converted.txt", read_mode);
-		file_open(file_RESULTS, "C:\ecse 325 LABS\src\Lab3\lab3-output.txt", write_mode);
+		file_open(file_IN, "C:\", read_mode);
+		file_open(file_RESULTS, "C:\", write_mode);
 		
 		while not endfile (file_IN) loop
 			readline(file_IN, v_lline1);	
