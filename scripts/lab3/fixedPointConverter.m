@@ -38,7 +38,7 @@ fclose(coefFile);
 
 %create a new array which runs contents of input array through fixed point
 %representation function and binary form function
-coefFixedPoint = bin(fi(coefArray,1,17,15)); %signed, 17bit word, 15bit fractional
+coefFixedPoint = bin(fi(coefArray,1,16,15)); %signed, 17bit word, 15bit fractional
 
 %create a new output file and give it write permission, print the array to
 %file and close
