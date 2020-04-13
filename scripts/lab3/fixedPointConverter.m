@@ -38,7 +38,7 @@ fclose(coefFile);
 
 %create a new array which runs contents of input array through fixed point
 %representation function and binary form function
-coefFixedPoint = bin(fi(coefArray,1,16,15)); %signed, 17bit word, 15bit fractional
+coefFixedPoint = bin(fi(coefArray,1,16,15)); %signed, 16bit word, 15bit fractional
 
 %create a new output file and give it write permission, print the array to
 %file and close
@@ -47,3 +47,21 @@ coefFixedPoint = bin(fi(coefArray,1,16,15)); %signed, 17bit word, 15bit fraction
 coefOutFile = fopen("lab3-coef-fixedOutput.txt", "w");
 fprintf(coefOutFile, [repmat('%c',1,size(coefFixedPoint,2)) '\r\n'], transpose(coefFixedPoint));
 fclose(coefOutFile);
+%% Convert the output values from floats to fixed point
+
+%read file, write contents to an array and close
+outFile = fopen("out.txt_scaled.txt");
+outArray = fscanf(outFile, "%f"); 
+fclose(outFile);
+
+%create a new array which runs contents of input array through fixed point
+%representation function and binary form function
+outFixedPoint = bin(fi(outArray,1,17,15)); %signed, 17bit word, 15bit fractional
+
+%create a new output file and give it write permission, print the array to
+%file and close
+
+%contents of print statement allow array to be printed column wise
+outOutFile = fopen("lab3-theoretical-output.txt", "w");
+fprintf(outOutFile, [repmat('%c',1,size(outFixedPoint,2)) '\r\n'], transpose(outFixedPoint));
+fclose(outOutFile);
