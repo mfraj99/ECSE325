@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity g42_complex_square is	--multiplies two 32 bit complex numbers
+port(	i_clk			:	in std_logic; --clock
+		i_rstb		:	in std_logic; --asynchronous reset
+		i_x			:	in std_logic_vector(31 downto 0); --x input 32 bit complex number
+		i_y			:	in std_logic_vector(31 downto 0); --y input 32 bit complex number
+		o_xx, o_yy	:	in std_logic_vector(64 downto 0)); --real(xx) and imaginary(yy) product of x*y, 65 bit
+end g42_complex_square;
