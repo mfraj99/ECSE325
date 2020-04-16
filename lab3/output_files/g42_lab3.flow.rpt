@@ -1,5 +1,5 @@
 Flow report for g42_lab3
-Sun Apr 12 22:10:42 2020
+Mon Apr 13 17:37:58 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,19 +41,19 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Apr 12 22:10:42 2020       ;
+; Flow Status                     ; Successful - Mon Apr 13 17:37:58 2020       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; g42_lab3                                    ;
-; Top-level Entity Name           ; g42_FIR                                     ;
+; Top-level Entity Name           ; g42_FIRb                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 178 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 401                                         ;
+; Logic utilization (in ALMs)     ; 86 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 225                                         ;
 ; Total pins                      ; 35 / 457 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
-; Total DSP Blocks                ; 25 / 87 ( 29 % )                            ;
+; Total DSP Blocks                ; 13 / 87 ( 15 % )                            ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/12/2020 22:08:38 ;
+; Start date & time ; 04/13/2020 17:35:50 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g42_lab3            ;
 +-------------------+---------------------+
@@ -79,19 +79,19 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 154946504950358.158674371805996        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 154946504950358.158681375013844        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; g42_FIR     ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; g42_FIR     ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; g42_FIR     ; Top            ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; g42_FIRb    ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; g42_FIRb    ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; g42_FIRb    ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; g42_FIR                                ; g42_lab3      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; g42_FIRb                               ; g42_lab3      ; --          ; --             ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -100,12 +100,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 4894 MB             ; 00:00:20                           ;
-; Fitter                    ; 00:00:48     ; 1.1                     ; 6682 MB             ; 00:01:06                           ;
-; Assembler                 ; 00:00:23     ; 1.0                     ; 4864 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:22     ; 1.4                     ; 5172 MB             ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:17     ; 1.0                     ; 4773 MB             ; 00:00:01                           ;
-; Total                     ; 00:02:16     ; --                      ; --                  ; 00:01:40                           ;
+; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 4885 MB             ; 00:00:19                           ;
+; Fitter                    ; 00:00:49     ; 1.0                     ; 6637 MB             ; 00:01:01                           ;
+; Assembler                 ; 00:00:24     ; 1.0                     ; 4860 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:22     ; 1.2                     ; 5161 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:18     ; 1.0                     ; 4765 MB             ; 00:00:01                           ;
+; Total                     ; 00:02:18     ; --                      ; --                  ; 00:01:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -49,21 +49,26 @@ process(clk, rst)
 	variable temp: signed(31 downto 0) := (others => '0');
 	variable output: signed(16 downto 0) := (others => '0');
 begin
+	--for reset, reset all values
 	if rst = '1' then
 		temp := (others => '0');
 		output := (others => '0');
 		y <= (others => '0');
+	--rising clock tick
 	elsif rising_edge(clk) then
 		output := (others => '0');
+		--shifting input
 		for i in 0 to 23 loop
 			input(1+i) <= input(i);
 		end loop;
 		input(0) <= signed(x);
 		
+		--take the total sum of all the multiplication of coeff and delayed input
 		for i in 0 to 24 loop
 			temp := coeff(24-i)*input(i);
 			output := output + temp(31 downto 15);
 		end loop;
+		--output
 		y <= std_logic_vector(output);
 	end if;
 end process;

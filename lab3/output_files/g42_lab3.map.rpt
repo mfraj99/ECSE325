@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g42_lab3
-Sun Apr 12 22:08:47 2020
+Mon Apr 13 17:36:00 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -14,10 +14,11 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis DSP Block Usage Summary
-  9. General Register Statistics
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -44,17 +45,17 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 12 22:08:47 2020       ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr 13 17:36:00 2020       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; g42_lab3                                    ;
-; Top-level Entity Name           ; g42_FIR                                     ;
+; Top-level Entity Name           ; g42_FIRb                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 417                                         ;
+; Total registers                 ; 225                                         ;
 ; Total pins                      ; 35                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 25                                          ;
+; Total DSP Blocks                ; 13                                          ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
@@ -70,7 +71,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; g42_FIR            ; g42_lab3           ;
+; Top-level entity name                                                           ; g42_FIRb           ; g42_lab3           ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -164,19 +165,17 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
-; g42_FIR.vhd                      ; yes             ; User VHDL File  ; C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIR.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
+; g42_FIRb.vhd                     ; yes             ; User VHDL File  ; C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIRb.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -184,25 +183,25 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 240       ;
+; Estimate of Logic utilization (ALMs needed) ; 126       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 204       ;
+; Combinational ALUT usage for logic          ; 96        ;
 ;     -- 7 input functions                    ; 0         ;
 ;     -- 6 input functions                    ; 0         ;
 ;     -- 5 input functions                    ; 0         ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 204       ;
+;     -- <=3 input functions                  ; 96        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 417       ;
+; Dedicated logic registers                   ; 225       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 35        ;
 ;                                             ;           ;
-; Total DSP Blocks                            ; 25        ;
+; Total DSP Blocks                            ; 13        ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 417       ;
-; Total fan-out                               ; 2507      ;
-; Average fan-out                             ; 3.50      ;
+; Maximum fan-out                             ; 225       ;
+; Total fan-out                               ; 1313      ;
+; Average fan-out                             ; 3.25      ;
 +---------------------------------------------+-----------+
 
 
@@ -211,7 +210,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |g42_FIR                   ; 204 (204)           ; 417 (417)                 ; 0                 ; 25         ; 35   ; 0            ; |g42_FIR            ; g42_FIR     ; work         ;
+; |g42_FIRb                  ; 96 (96)             ; 225 (225)                 ; 0                 ; 13         ; 35   ; 0            ; |g42_FIRb           ; g42_FIRb    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,12 +220,238 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------+-------------+
 ; Statistic                         ; Number Used ;
 +-----------------------------------+-------------+
-; Two Independent 18x18             ; 25          ;
-; Total number of DSP blocks        ; 25          ;
+; Two Independent 18x18             ; 13          ;
+; Total number of DSP blocks        ; 13          ;
 ;                                   ;             ;
-; Fixed Point Signed Multiplier     ; 12          ;
-; Fixed Point Mixed Sign Multiplier ; 13          ;
+; Fixed Point Signed Multiplier     ; 6           ;
+; Fixed Point Mixed Sign Multiplier ; 7           ;
 +-----------------------------------+-------------+
+
+
++----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                   ;
++-----------------------------------------+----------------------------+
+; Register name                           ; Reason for Removal         ;
++-----------------------------------------+----------------------------+
+; arrout[0][31]                           ; Merged with arrout[0][30]  ;
+; arrout[24][30]                          ; Merged with arrout[0][30]  ;
+; arrout[24][31]                          ; Merged with arrout[0][30]  ;
+; arrout[24][29]                          ; Merged with arrout[0][29]  ;
+; arrout[24][28]                          ; Merged with arrout[0][28]  ;
+; arrout[24][27]                          ; Merged with arrout[0][27]  ;
+; arrout[24][26]                          ; Merged with arrout[0][26]  ;
+; arrout[24][25]                          ; Merged with arrout[0][25]  ;
+; arrout[24][24]                          ; Merged with arrout[0][24]  ;
+; arrout[24][23]                          ; Merged with arrout[0][23]  ;
+; arrout[24][22]                          ; Merged with arrout[0][22]  ;
+; arrout[24][21]                          ; Merged with arrout[0][21]  ;
+; arrout[24][20]                          ; Merged with arrout[0][20]  ;
+; arrout[24][19]                          ; Merged with arrout[0][19]  ;
+; arrout[24][18]                          ; Merged with arrout[0][18]  ;
+; arrout[24][17]                          ; Merged with arrout[0][17]  ;
+; arrout[24][16]                          ; Merged with arrout[0][16]  ;
+; arrout[24][15]                          ; Merged with arrout[0][15]  ;
+; arrout[2][31]                           ; Merged with arrout[22][31] ;
+; arrout[2][30]                           ; Merged with arrout[22][30] ;
+; arrout[2][29]                           ; Merged with arrout[22][29] ;
+; arrout[2][28]                           ; Merged with arrout[22][28] ;
+; arrout[2][27]                           ; Merged with arrout[22][27] ;
+; arrout[2][26]                           ; Merged with arrout[22][26] ;
+; arrout[2][25]                           ; Merged with arrout[22][25] ;
+; arrout[2][24]                           ; Merged with arrout[22][24] ;
+; arrout[2][23]                           ; Merged with arrout[22][23] ;
+; arrout[2][22]                           ; Merged with arrout[22][22] ;
+; arrout[2][21]                           ; Merged with arrout[22][21] ;
+; arrout[2][20]                           ; Merged with arrout[22][20] ;
+; arrout[2][19]                           ; Merged with arrout[22][19] ;
+; arrout[2][18]                           ; Merged with arrout[22][18] ;
+; arrout[2][17]                           ; Merged with arrout[22][17] ;
+; arrout[2][16]                           ; Merged with arrout[22][16] ;
+; arrout[2][15]                           ; Merged with arrout[22][15] ;
+; arrout[1][31]                           ; Merged with arrout[1][30]  ;
+; arrout[23][30]                          ; Merged with arrout[1][30]  ;
+; arrout[23][31]                          ; Merged with arrout[1][30]  ;
+; arrout[23][29]                          ; Merged with arrout[1][29]  ;
+; arrout[23][28]                          ; Merged with arrout[1][28]  ;
+; arrout[23][27]                          ; Merged with arrout[1][27]  ;
+; arrout[23][26]                          ; Merged with arrout[1][26]  ;
+; arrout[23][25]                          ; Merged with arrout[1][25]  ;
+; arrout[23][24]                          ; Merged with arrout[1][24]  ;
+; arrout[23][23]                          ; Merged with arrout[1][23]  ;
+; arrout[23][22]                          ; Merged with arrout[1][22]  ;
+; arrout[23][21]                          ; Merged with arrout[1][21]  ;
+; arrout[23][20]                          ; Merged with arrout[1][20]  ;
+; arrout[23][19]                          ; Merged with arrout[1][19]  ;
+; arrout[23][18]                          ; Merged with arrout[1][18]  ;
+; arrout[23][17]                          ; Merged with arrout[1][17]  ;
+; arrout[23][16]                          ; Merged with arrout[1][16]  ;
+; arrout[23][15]                          ; Merged with arrout[1][15]  ;
+; arrout[20][31]                          ; Merged with arrout[20][30] ;
+; arrout[4][30]                           ; Merged with arrout[20][30] ;
+; arrout[4][31]                           ; Merged with arrout[20][30] ;
+; arrout[4][29]                           ; Merged with arrout[20][29] ;
+; arrout[4][28]                           ; Merged with arrout[20][28] ;
+; arrout[4][27]                           ; Merged with arrout[20][27] ;
+; arrout[4][26]                           ; Merged with arrout[20][26] ;
+; arrout[4][25]                           ; Merged with arrout[20][25] ;
+; arrout[4][24]                           ; Merged with arrout[20][24] ;
+; arrout[4][23]                           ; Merged with arrout[20][23] ;
+; arrout[4][22]                           ; Merged with arrout[20][22] ;
+; arrout[4][21]                           ; Merged with arrout[20][21] ;
+; arrout[4][20]                           ; Merged with arrout[20][20] ;
+; arrout[4][19]                           ; Merged with arrout[20][19] ;
+; arrout[4][18]                           ; Merged with arrout[20][18] ;
+; arrout[4][17]                           ; Merged with arrout[20][17] ;
+; arrout[4][16]                           ; Merged with arrout[20][16] ;
+; arrout[4][15]                           ; Merged with arrout[20][15] ;
+; arrout[3][31]                           ; Merged with arrout[21][31] ;
+; arrout[3][30]                           ; Merged with arrout[21][30] ;
+; arrout[3][29]                           ; Merged with arrout[21][29] ;
+; arrout[3][28]                           ; Merged with arrout[21][28] ;
+; arrout[3][27]                           ; Merged with arrout[21][27] ;
+; arrout[3][26]                           ; Merged with arrout[21][26] ;
+; arrout[3][25]                           ; Merged with arrout[21][25] ;
+; arrout[3][24]                           ; Merged with arrout[21][24] ;
+; arrout[3][23]                           ; Merged with arrout[21][23] ;
+; arrout[3][22]                           ; Merged with arrout[21][22] ;
+; arrout[3][21]                           ; Merged with arrout[21][21] ;
+; arrout[3][20]                           ; Merged with arrout[21][20] ;
+; arrout[3][19]                           ; Merged with arrout[21][19] ;
+; arrout[3][18]                           ; Merged with arrout[21][18] ;
+; arrout[3][17]                           ; Merged with arrout[21][17] ;
+; arrout[3][16]                           ; Merged with arrout[21][16] ;
+; arrout[3][15]                           ; Merged with arrout[21][15] ;
+; arrout[6][31]                           ; Merged with arrout[18][31] ;
+; arrout[6][30]                           ; Merged with arrout[18][30] ;
+; arrout[6][29]                           ; Merged with arrout[18][29] ;
+; arrout[6][28]                           ; Merged with arrout[18][28] ;
+; arrout[6][27]                           ; Merged with arrout[18][27] ;
+; arrout[6][26]                           ; Merged with arrout[18][26] ;
+; arrout[6][25]                           ; Merged with arrout[18][25] ;
+; arrout[6][24]                           ; Merged with arrout[18][24] ;
+; arrout[6][23]                           ; Merged with arrout[18][23] ;
+; arrout[6][22]                           ; Merged with arrout[18][22] ;
+; arrout[6][21]                           ; Merged with arrout[18][21] ;
+; arrout[6][20]                           ; Merged with arrout[18][20] ;
+; arrout[6][19]                           ; Merged with arrout[18][19] ;
+; arrout[6][18]                           ; Merged with arrout[18][18] ;
+; arrout[6][17]                           ; Merged with arrout[18][17] ;
+; arrout[6][16]                           ; Merged with arrout[18][16] ;
+; arrout[6][15]                           ; Merged with arrout[18][15] ;
+; arrout[5][31]                           ; Merged with arrout[19][31] ;
+; arrout[5][30]                           ; Merged with arrout[19][30] ;
+; arrout[5][29]                           ; Merged with arrout[19][29] ;
+; arrout[5][28]                           ; Merged with arrout[19][28] ;
+; arrout[5][27]                           ; Merged with arrout[19][27] ;
+; arrout[5][26]                           ; Merged with arrout[19][26] ;
+; arrout[5][25]                           ; Merged with arrout[19][25] ;
+; arrout[5][24]                           ; Merged with arrout[19][24] ;
+; arrout[5][23]                           ; Merged with arrout[19][23] ;
+; arrout[5][22]                           ; Merged with arrout[19][22] ;
+; arrout[5][21]                           ; Merged with arrout[19][21] ;
+; arrout[5][20]                           ; Merged with arrout[19][20] ;
+; arrout[5][19]                           ; Merged with arrout[19][19] ;
+; arrout[5][18]                           ; Merged with arrout[19][18] ;
+; arrout[5][17]                           ; Merged with arrout[19][17] ;
+; arrout[5][16]                           ; Merged with arrout[19][16] ;
+; arrout[5][15]                           ; Merged with arrout[19][15] ;
+; arrout[8][31]                           ; Merged with arrout[16][31] ;
+; arrout[8][30]                           ; Merged with arrout[16][30] ;
+; arrout[8][29]                           ; Merged with arrout[16][29] ;
+; arrout[8][28]                           ; Merged with arrout[16][28] ;
+; arrout[8][27]                           ; Merged with arrout[16][27] ;
+; arrout[8][26]                           ; Merged with arrout[16][26] ;
+; arrout[8][25]                           ; Merged with arrout[16][25] ;
+; arrout[8][24]                           ; Merged with arrout[16][24] ;
+; arrout[8][23]                           ; Merged with arrout[16][23] ;
+; arrout[8][22]                           ; Merged with arrout[16][22] ;
+; arrout[8][21]                           ; Merged with arrout[16][21] ;
+; arrout[8][20]                           ; Merged with arrout[16][20] ;
+; arrout[8][19]                           ; Merged with arrout[16][19] ;
+; arrout[8][18]                           ; Merged with arrout[16][18] ;
+; arrout[8][17]                           ; Merged with arrout[16][17] ;
+; arrout[8][16]                           ; Merged with arrout[16][16] ;
+; arrout[8][15]                           ; Merged with arrout[16][15] ;
+; arrout[17][31]                          ; Merged with arrout[17][30] ;
+; arrout[7][30]                           ; Merged with arrout[17][30] ;
+; arrout[7][31]                           ; Merged with arrout[17][30] ;
+; arrout[7][29]                           ; Merged with arrout[17][29] ;
+; arrout[7][28]                           ; Merged with arrout[17][28] ;
+; arrout[7][27]                           ; Merged with arrout[17][27] ;
+; arrout[7][26]                           ; Merged with arrout[17][26] ;
+; arrout[7][25]                           ; Merged with arrout[17][25] ;
+; arrout[7][24]                           ; Merged with arrout[17][24] ;
+; arrout[7][23]                           ; Merged with arrout[17][23] ;
+; arrout[7][22]                           ; Merged with arrout[17][22] ;
+; arrout[7][21]                           ; Merged with arrout[17][21] ;
+; arrout[7][20]                           ; Merged with arrout[17][20] ;
+; arrout[7][19]                           ; Merged with arrout[17][19] ;
+; arrout[7][18]                           ; Merged with arrout[17][18] ;
+; arrout[7][17]                           ; Merged with arrout[17][17] ;
+; arrout[7][16]                           ; Merged with arrout[17][16] ;
+; arrout[7][15]                           ; Merged with arrout[17][15] ;
+; arrout[10][31]                          ; Merged with arrout[10][30] ;
+; arrout[14][30]                          ; Merged with arrout[10][30] ;
+; arrout[14][31]                          ; Merged with arrout[10][30] ;
+; arrout[14][29]                          ; Merged with arrout[10][29] ;
+; arrout[14][28]                          ; Merged with arrout[10][28] ;
+; arrout[14][27]                          ; Merged with arrout[10][27] ;
+; arrout[14][26]                          ; Merged with arrout[10][26] ;
+; arrout[14][25]                          ; Merged with arrout[10][25] ;
+; arrout[14][24]                          ; Merged with arrout[10][24] ;
+; arrout[14][23]                          ; Merged with arrout[10][23] ;
+; arrout[14][22]                          ; Merged with arrout[10][22] ;
+; arrout[14][21]                          ; Merged with arrout[10][21] ;
+; arrout[14][20]                          ; Merged with arrout[10][20] ;
+; arrout[14][19]                          ; Merged with arrout[10][19] ;
+; arrout[14][18]                          ; Merged with arrout[10][18] ;
+; arrout[14][17]                          ; Merged with arrout[10][17] ;
+; arrout[14][16]                          ; Merged with arrout[10][16] ;
+; arrout[14][15]                          ; Merged with arrout[10][15] ;
+; arrout[15][31]                          ; Merged with arrout[15][30] ;
+; arrout[9][30]                           ; Merged with arrout[15][30] ;
+; arrout[9][31]                           ; Merged with arrout[15][30] ;
+; arrout[9][29]                           ; Merged with arrout[15][29] ;
+; arrout[9][28]                           ; Merged with arrout[15][28] ;
+; arrout[9][27]                           ; Merged with arrout[15][27] ;
+; arrout[9][26]                           ; Merged with arrout[15][26] ;
+; arrout[9][25]                           ; Merged with arrout[15][25] ;
+; arrout[9][24]                           ; Merged with arrout[15][24] ;
+; arrout[9][23]                           ; Merged with arrout[15][23] ;
+; arrout[9][22]                           ; Merged with arrout[15][22] ;
+; arrout[9][21]                           ; Merged with arrout[15][21] ;
+; arrout[9][20]                           ; Merged with arrout[15][20] ;
+; arrout[9][19]                           ; Merged with arrout[15][19] ;
+; arrout[9][18]                           ; Merged with arrout[15][18] ;
+; arrout[9][17]                           ; Merged with arrout[15][17] ;
+; arrout[9][16]                           ; Merged with arrout[15][16] ;
+; arrout[9][15]                           ; Merged with arrout[15][15] ;
+; arrout[12][31]                          ; Merged with arrout[12][30] ;
+; arrout[13][31]                          ; Merged with arrout[11][31] ;
+; arrout[13][30]                          ; Merged with arrout[11][30] ;
+; arrout[13][29]                          ; Merged with arrout[11][29] ;
+; arrout[13][28]                          ; Merged with arrout[11][28] ;
+; arrout[13][27]                          ; Merged with arrout[11][27] ;
+; arrout[13][26]                          ; Merged with arrout[11][26] ;
+; arrout[13][25]                          ; Merged with arrout[11][25] ;
+; arrout[13][24]                          ; Merged with arrout[11][24] ;
+; arrout[13][23]                          ; Merged with arrout[11][23] ;
+; arrout[13][22]                          ; Merged with arrout[11][22] ;
+; arrout[13][21]                          ; Merged with arrout[11][21] ;
+; arrout[13][20]                          ; Merged with arrout[11][20] ;
+; arrout[13][19]                          ; Merged with arrout[11][19] ;
+; arrout[13][18]                          ; Merged with arrout[11][18] ;
+; arrout[13][17]                          ; Merged with arrout[11][17] ;
+; arrout[13][16]                          ; Merged with arrout[11][16] ;
+; arrout[13][15]                          ; Merged with arrout[11][15] ;
+; arrout[16][31]                          ; Lost fanout                ;
+; arrout[18][31]                          ; Lost fanout                ;
+; arrout[19][31]                          ; Lost fanout                ;
+; arrout[21][31]                          ; Lost fanout                ;
+; arrout[22][31]                          ; Lost fanout                ;
+; arrout[11][31]                          ; Lost fanout                ;
+; Total Number of Removed Registers = 217 ;                            ;
++-----------------------------------------+----------------------------+
 
 
 +------------------------------------------------------+
@@ -234,12 +459,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 417   ;
+; Total registers                              ; 225   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 17    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 400   ;
+; Number of registers using Clock Enable       ; 208   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -249,17 +474,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 417                         ;
+; arriav_ff             ; 225                         ;
 ;     CLR               ; 17                          ;
-;     ENA               ; 400                         ;
-; arriav_lcell_comb     ; 204                         ;
-;     shared            ; 204                         ;
-;         3 data inputs ; 204                         ;
-; arriav_mac            ; 25                          ;
+;     ENA               ; 208                         ;
+; arriav_lcell_comb     ; 96                          ;
+;     shared            ; 96                          ;
+;         3 data inputs ; 96                          ;
+; arriav_mac            ; 13                          ;
 ; boundary_port         ; 35                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.60                        ;
-; Average LUT depth     ; 2.89                        ;
+; Max LUT depth         ; 4.50                        ;
+; Average LUT depth     ; 2.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -278,26 +503,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Apr 12 22:08:21 2020
+    Info: Processing started: Mon Apr 13 17:35:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g42_lab3 -c g42_lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file g42_fir.vhd
     Info (12022): Found design unit 1: g42_FIR-a0 File: C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIR.vhd Line: 14
     Info (12023): Found entity 1: g42_FIR File: C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIR.vhd Line: 6
-Info (12127): Elaborating entity "g42_FIR" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file g42_firb.vhd
+    Info (12022): Found design unit 1: g42_FIRb-a0 File: C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIRb.vhd Line: 14
+    Info (12023): Found entity 1: g42_FIRb File: C:/Users/sli196.CAMPUS/ECSE325/lab3/g42_FIRb.vhd Line: 6
+Info (12127): Elaborating entity "g42_FIRb" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 664 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 353 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 604 logic cells
-    Info (21062): Implemented 25 DSP elements
+    Info (21061): Implemented 305 logic cells
+    Info (21062): Implemented 13 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4894 megabytes
-    Info: Processing ended: Sun Apr 12 22:08:47 2020
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Mon Apr 13 17:36:00 2020
     Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:19
 
 
